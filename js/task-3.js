@@ -1,3 +1,5 @@
+'use strict';
+
 function filterArray(numbers, value) {
   let resultArray = [];
   const filteredArray = numbers.filter(number => number > value);
