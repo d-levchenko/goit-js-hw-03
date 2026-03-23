@@ -4,7 +4,7 @@ function makeArray(firstArray, secondArray, maxLength) {
   let resultArray = [];
   const bothArraysValue = firstArray.concat(secondArray);
 
-  for (let i = 0; i < maxLength; i++) {
+  for (let i = 0; i < Math.min(maxLength, bothArraysValue.length); i++) {
     resultArray.push(bothArraysValue[i]);
   }
 
